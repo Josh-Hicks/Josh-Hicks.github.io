@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Tracker</h1>
+            <h4>v2.0</h4>
+        </header>
+        <div class="app-body">
+            <div class="left">
+                <h3>Create a Task</h3>
+                <form id="taskCreator">
+                    <label for="name">Task Name</label>
+                    <input type="text" id="name">
+                    <label for="date">Date</label>
+                    <input type="text" id="date">
+                    <label for="assigned">Assigned To</label>
+                    <input type="text" id="assigned">
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Existing Tasks</h3>
+                <div id="task-container">
+                    <ul id="tasks"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
